@@ -1,0 +1,103 @@
+@import "@penpot/plugin-styles/styles.css";
+
+:root {
+  --fg: var(--lf-primary);
+  --mg: var(--lb-quaternary);
+  --bg: var(--lb-primary);
+}
+
+[data-theme="light"] {
+  --fg: var(--lf-primary);
+  --mg: var(--lb-quaternary);
+  --bg: var(--lb-primary);
+}
+
+[data-theme="dark"] {
+  --fg: var(--df-primary);
+  --mg: var(--db-quaternary);
+  --bg: var(--db-primary);
+}
+
+* {
+  font-family: Work Sans, sans-serif !important;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+label.input {
+  cursor: pointer;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 8px;
+  background-color: var(--background-primary);
+  border-top: 1px solid var(--background-quaternary);
+  font-size: 0.8em;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.grid-item {
+  padding: 3px;
+  background-color: transparent;
+  transition: background-color 120ms ease;
+  max-height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  background-color: var(--background-quaternary);
+}
+
+#toolbar {
+  padding-block: 8px;
+  border-bottom: 1px solid var(--background-quaternary);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6px;
+}
+
+#grid {
+  padding-block: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px;
+  overflow-y: scroll;
+}
+
+#version {
+  background-color: var(--background-quaternary);
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: help;
+  margin-left: 8px;
+}

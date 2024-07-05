@@ -1,0 +1,25 @@
+{
+  "name": "@phosphor-icons/penpot",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch & vite preview",
+    "dev:win": "start /B vite build --watch & vite preview",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@penpot/plugin-styles": "0.6.0",
+    "@penpot/plugin-types": "0.6.0",
+    "@phosphor-icons/core": "^2.1.1",
+    "@phosphor-icons/webcomponents": "^2.1.5",
+    "@solid-primitives/scheduled": "^1.4.3",
+    "fuse.js": "^7.0.0",
+    "solid-js": "^1.8.18"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-solid": "^2.10.2"
+  }
+}
