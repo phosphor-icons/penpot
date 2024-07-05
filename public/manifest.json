@@ -2,8 +2,8 @@
   "name": "Phosphor Icons",
   "description": "A friendly icon family for Penpot",
   "host": "http://localhost:4400",
-  "code": "/plugin.js",
-  "icon": "/icon.png",
+  "code": "/penpot/plugin.js",
+  "icon": "/penpot/icon.png",
   "permissions": [
     "content:read",
     "content:write",

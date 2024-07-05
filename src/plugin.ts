@@ -1,7 +1,7 @@
 import { IconStyle } from "@phosphor-icons/core";
 import type { PluginMessageEvent, UIMessageEvent, InsertIconEvent } from "./model";
 
-penpot.ui.open("Phosphor Icons", `?theme=${penpot.getTheme()}`, {
+penpot.ui.open("Phosphor Icons", `/penpot/?theme=${penpot.getTheme()}`, {
   width: 350,
   height: 580,
 });
