@@ -16,6 +16,13 @@ export default defineConfig({
   },
   preview: {
     port: 4400,
+    proxy: {
+      // Differentiate Dev and Prod versions in the plugin picker!
+      "/penpot/icon.png": {
+        target: "http://localhost:4400/",
+        rewrite: (str) => str.replace("icon", "icon_dev"),
+      },
+    },
   },
   base: "/penpot/"
 });
