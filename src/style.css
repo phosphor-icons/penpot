@@ -56,6 +56,10 @@ footer {
   display: none;
 }
 
+.input {
+  line-height: initial;
+}
+
 .flex {
   display: flex;
   align-items: center;

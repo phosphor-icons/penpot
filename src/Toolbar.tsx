@@ -20,6 +20,7 @@ const Toolbar: Component<ToolbarProps> = (props) => {
         type="search"
         size="1"
         placeholder="Search icons..."
+        title="Search for icon names, categories, or keywords"
         value={props.query}
         onInput={(e) => props.setQuery(e.target.value)}
       />
