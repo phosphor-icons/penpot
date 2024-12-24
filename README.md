@@ -6,7 +6,7 @@ Phosphor is a flexible icon family for interfaces, diagrams, presentations — w
 
 ## Installation
 
-Open the plugin manager window, and enter the following URL:
+Click [this link](https://design.penpot.app/#?plugin=https://phosphor-icons.github.io/penpot/manifest.json), or open the plugin manager window, and enter the following URL:
 
 ```
 https://phosphor-icons.github.io/penpot/manifest.json
