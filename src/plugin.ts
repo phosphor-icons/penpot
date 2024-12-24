@@ -1,7 +1,11 @@
 import { IconStyle } from "@phosphor-icons/core";
-import type { PluginMessageEvent, UIMessageEvent, InsertIconEvent } from "./model";
+import type {
+  PluginMessageEvent,
+  UIMessageEvent,
+  InsertIconEvent,
+} from "./model";
 
-penpot.ui.open("Phosphor Icons", `/penpot/?theme=${penpot.getTheme()}`, {
+penpot.ui.open("Phosphor Icons", `/penpot/?theme=${penpot.theme}`, {
   width: 350,
   height: 580,
 });
@@ -19,7 +23,7 @@ penpot.ui.onMessage<string>(async (message) => {
     default:
       return;
   }
-})
+});
 
 function sendMessage(message: PluginMessageEvent) {
   penpot.ui.sendMessage(message);
@@ -27,18 +31,24 @@ function sendMessage(message: PluginMessageEvent) {
 
 async function handleInsertIcon(data: InsertIconEvent) {
   const { entry, svg, raw, weight } = data.content;
-  const markup = raw ? await (async () => {
-    try {
-      const text = await fetchRawIcon(entry.name, weight);
-      return text;
-    } catch (_) {
-      // TODO: notify somehow?
-      return svg;
-    }
-  })() : svg;
+  const markup = raw
+    ? await (async () => {
+        try {
+          const text = await fetchRawIcon(entry.name, weight);
+          return text;
+        } catch (_) {
+          // TODO: notify somehow?
+          return svg;
+        }
+      })()
+    : svg;
 
   const center = penpot.viewport.center;
   const shape = penpot.createShapeFromSvg(markup);
+  if (!shape) {
+    return;
+  }
+
   shape.name = entry.pascal_name;
   shape.proportionLock = true;
   if (!raw) shape.resize(24, 24);

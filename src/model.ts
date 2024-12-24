@@ -1,9 +1,9 @@
-import { PenpotTheme } from "@penpot/plugin-types";
+import { Theme } from "@penpot/plugin-types";
 import { IconEntry, IconStyle } from "@phosphor-icons/core";
 
 export type ThemePluginEvent = {
   type: "theme";
-  content: PenpotTheme;
+  content: Theme;
 };
 
 export type PluginMessageEvent = ThemePluginEvent;
