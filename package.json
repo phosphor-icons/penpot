@@ -1,7 +1,7 @@
 {
   "name": "@phosphor-icons/penpot",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite build --watch & vite preview",
@@ -11,18 +11,18 @@
     "deploy": "gh-pages -d dist/"
   },
   "dependencies": {
-    "@penpot/plugin-styles": "0.6.0",
-    "@penpot/plugin-types": "0.6.0",
+    "@penpot/plugin-styles": "^1.1.0",
+    "@penpot/plugin-types": "^1.1.0",
     "@phosphor-icons/core": "^2.1.1",
     "@phosphor-icons/webcomponents": "^2.1.5",
-    "@solid-primitives/scheduled": "^1.4.3",
+    "@solid-primitives/scheduled": "^1.4.4",
     "fuse.js": "^7.0.0",
-    "solid-js": "^1.8.18"
+    "solid-js": "^1.9.3"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.0",
-    "vite-plugin-solid": "^2.10.2"
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vite-plugin-solid": "^2.11.0"
   }
 }
