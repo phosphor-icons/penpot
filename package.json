@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.2.0",
   "type": "module",
+  "packageManager": "pnpm@9",
   "scripts": {
     "dev": "vite build --watch & vite preview",
     "dev:win": "start /B vite build --watch & vite preview",
