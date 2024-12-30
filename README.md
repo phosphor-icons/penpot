@@ -1,12 +1,14 @@
-<img src="https://github.com/phosphor-icons/figma/blob/master/meta/phosphor-mark-tight-black.png?raw=true" width="128" align="right" />
-
 # @phosphor-icons/penpot
 
-Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
+<!-- BEGIN_LOGO -->
+<img src="https://github.com/phosphor-icons/figma/blob/master/meta/phosphor-mark-tight-black.png?raw=true" width="128" align="right" />
+<!-- END_LOGO -->
+
+Phosphor is a flexible icon family for interfaces, diagrams, presentations — whatever, really. This repository contains the source code for our Penpot plugin, which allows you to browse, search and copy icons into your project. Explore all our icons at [phosphoricons.com](https://phosphoricons.com).
 
 ## Installation
 
-Click [this link](https://design.penpot.app/#?plugin=https://phosphor-icons.github.io/penpot/manifest.json), or open the plugin manager window, and enter the following URL:
+To install, click [this link](https://design.penpot.app/#?plugin=https://phosphor-icons.github.io/penpot/manifest.json), or open the plugin manager window, and enter the following URL:
 
 ```
 https://phosphor-icons.github.io/penpot/manifest.json
