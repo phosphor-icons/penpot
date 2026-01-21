@@ -17,7 +17,7 @@
     "@phosphor-icons/webcomponents": "^2.1.5",
     "@solid-primitives/scheduled": "^1.4.4",
     "fuse.js": "^7.0.0",
-    "solid-js": "^1.9.3"
+    "solid-js": "^1.9.4"
   },
   "devDependencies": {
     "gh-pages": "^6.2.0",
